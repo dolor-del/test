@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title><?php echo @TITLE; ?></title>
+  <title><?php echo Core::$TITLE; ?></title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <link href="/css/normalize.css" rel="stylesheet" type="text/css">
@@ -14,12 +14,12 @@
 
 <?php
 include './modules/static/header.php';
-include './skins/'.SKIN.'/static/header.tpl';
+include './skins/'.Core::$SKIN.'/static/header.tpl';
 
 include $_GET['module'].'/'.$_GET['page'].'.tpl';
 
 include './modules/static/footer.php';
-include './skins/'.SKIN.'/static/footer.tpl';
+include './skins/'.Core::$SKIN.'/static/footer.tpl';
 ?>
 
 </body>

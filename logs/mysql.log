@@ -1,0 +1,220 @@
+QUERY: SELECCT * FROM `goods`
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECCT * FROM `goods`' at line 1
+
+QUERY: SELECCT * FROM `goods`
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECCT * FROM `goods`' at line 1
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '&lt;b',
+    `password` = ''',
+    `about` = '&gt;ha&lt;/b&gt;'
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+<br>
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+<br>
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+<br>
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+
+QUERY: 
+    INSERTg
+<br>
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERTg' at line 1
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+<br>
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+<br>
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4<br>
+DATE ERROR: 2020-10-27 16:32:10<br>
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\goods\main.php<br>
+LINE: 46
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+<br>
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4<br>
+DATE ERROR: 2020-10-27 16:32:23<br>
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\goods\main.php<br>
+LINE: 46
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+DATE ERROR: 2020-10-27 16:34:06
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\goods\main.php
+LINE: 46
+
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+DATE ERROR: 2020-10-27 16:34:08
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\goods\main.php
+LINE: 46
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+
+DATE ERROR: 2020-10-27 16:36:16
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\goods\main.php
+LINE: 46
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+
+DATE ERROR: 2020-10-27 16:37:41
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\goods\main.php
+LINE: 46
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+DATE ERROR: 2020-10-27 16:38:37
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\goods\main.php
+LINE: 46
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+
+DATE ERROR: 2020-10-27 16:38:58
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\goods\main.php
+LINE: 46
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/b>'' at line 4
+QUERY: 
+    INSERT INTO `users` SET
+    `login` = '<b',
+    `password` = ''',
+    `about` = '>ha</b>'
+
+DATE ERROR: 2020-10-27 17:43:49
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\goods\main.php
+LINE: 46
+
+Field 'hash' doesn't have a default value
+QUERY: INSERT INTO `users` SET 
+			`login` = 'dolor',
+			`password` = 'CB3OUOq.hfup6',
+			`email` = 'shaboltasivan@mail.ru'
+DATE ERROR: 2020-10-28 18:14:17
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\cab\registration.php
+LINE: 50
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(WHERE `login` = 'dolor'
+				OR `email` = 'dolor')
+				AND `password` = 'CB53s' at line 3
+QUERY: SELECT *
+				FROM `users`
+				(WHERE `login` = 'dolor'
+				OR `email` = 'dolor')
+				AND `password` = 'CB53s9BQ1pBGk'
+				LIMIT 1
+				
+DATE ERROR: 2020-10-30 20:28:30
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\cab\authorization.php
+LINE: 19
+
+
+QUERY: SELECT *
+			FROM `users`
+			WHERE `login` = ''
+			LIMIT 1
+			
+DATE ERROR: 2020-10-30 21:12:34
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\allpages.php
+LINE: 6
+
+
+QUERY: SELECT *
+			FROM `users`
+			WHERE `login` = ''
+			LIMIT 1
+			
+DATE ERROR: 2020-10-30 21:12:36
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\allpages.php
+LINE: 6
+
+
+QUERY: SELECT *
+			FROM `users`
+			WHERE `login` = ''
+			LIMIT 1
+			
+DATE ERROR: 2020-10-30 21:12:36
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\allpages.php
+LINE: 6
+
+
+QUERY: SELECT *
+			FROM `users`
+			WHERE `login` = ''
+			LIMIT 1
+			
+DATE ERROR: 2020-10-30 21:14:23
+FILE DIRECTORY: W:\domains\shabo-test.ru\modules\allpages.php
+LINE: 6
+

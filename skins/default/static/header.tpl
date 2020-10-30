@@ -10,19 +10,19 @@
 	<div class="panel_1">
 		<ul>
 			<?php
-			if (isset($_SESSION['login']) && isset($_SESSION['access']) && $_SESSION['access'] != 0) {
-				echo '<span style="font-size: 13px">You are logged in as <span style="color: #008000; font-weight:bold">'.htmlspecialchars($_SESSION['login']).'</span></span>';
+			if (isset($_SESSION['user'])) {
+				echo '<span style="font-size: 13px">You are logged in as <span style="color: #008000; font-weight:bold">'.hc($_SESSION['user']['login']).'</span></span>';
 			}
-			if ($_SERVER ['REMOTE_ADDR'] == '12.0.0.1' || (isset($_SESSION['access']) && $_SESSION['access'] == 1)) {
+			if ($_SERVER ['REMOTE_ADDR'] == '12.0.0.1' || (isset($_SESSION['user']) && $_SESSION['user']['access'] == 5)) {
 				echo '<li><a href="?page=admin_panel">ADMIN</a></li>';
 			}
 			?>
 			<li><a href="<?php
-			if (!isset($_SESSION['access']) || $_SESSION['access'] == 0) echo '?page=authorization';
-			elseif ($_SESSION['access'] != 0) echo '?page=editprofile';
+			if (isset($_SESSION['user'])) echo '?page=editprofile';
+			else echo '?module=cab&page=authorization';
 			?>">MY ACCOUNT</a></li>
 			<?php
-			if (isset($_SESSION['access']) && $_SESSION['access'] != 0) {
+			if (isset($_SESSION['user'])) {
 				echo '<li><a href="?page=logout">LOG OUT</a></li>';
 			}
 			?>
