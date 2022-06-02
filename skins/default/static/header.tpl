@@ -1,34 +1,50 @@
 <!-- ОТКРЫВАЕМ БЛОК С КОНТЕНТОМ -->
 <div class="content">
 
+<script>
+	"use strict";
+
+	window.onload = function () {
+		document.getElementById('autho').onclick = function () {
+			document.getElementById('modal').style.display = 'block';
+		};
+	};
+</script>
+
 <header>
 	<div class="container_logo">
 		<a href="/">
-			SPARE<span>PARTS</span>
+			ONLINE<span>TEST</span>
 		</a>
 	</div>
 	<div class="panel_1">
 		<ul>
 			<?php
 			if (isset($_SESSION['user'])) {
-				echo '<span style="font-size: 13px">You are logged in as <span style="color: #008000; font-weight:bold">'.hc($_SESSION['user']['login']).'</span></span>';
+				echo '<span style="font-size: 13px">Вы вошли как <span style="color: #008000; font-weight:bold">'.hc($_SESSION['user']['login']).'</span></span>';
 			}
-			if ($_SERVER ['REMOTE_ADDR'] == '12.0.0.1' || (isset($_SESSION['user']) && $_SESSION['user']['access'] == 5)) {
-				echo '<li><a href="?page=admin_panel">ADMIN</a></li>';
+			if ($_SERVER ['REMOTE_ADDR'] == '12.0.0.1' || ((isset($_SESSION['user']) && $_SESSION['user']['access'] == 5))) {
+				echo '<li><a href="/admin/static">АДМИН</a></li>';
 			}
 			?>
-			<li><a href="<?php
-			if (isset($_SESSION['user'])) echo '?page=editprofile';
-			else echo '?module=cab&page=authorization';
-			?>">MY ACCOUNT</a></li>
+			<li><a id="autho" style="position:relative" <?php
+			if (isset($_SESSION['user'])) { echo 'href="/static/editprofile"';}
+			/*else echo '/cab/authorization';*/
+			?>>МОЙ АККАУНТ
+					<?php if (!isset($_SESSION['user'])) { ?>
+					<form action="" method="post" onSubmit="return check();" id="modal" style="display:none; position:absolute; width:200px; height:160px; top: 13px; left:-112px; background-color: white; border: 1px solid black; text-align:center; z-index: 100; line-height: 5px;">
+						<p>Логин:</p><br><input type="text" id="login" name="login"><br><span id="errLogin"></span><br>
+						<p>Пароль:</p><br><input type="password" id="pass" name="pass"><br><span id="errPass"></span><br><br>
+						<input type="submit" value="Войти">
+					</form>
+					</a>
+					<?php } ?>
+			</li>
 			<?php
 			if (isset($_SESSION['user'])) {
-				echo '<li><a href="?page=logout">LOG OUT</a></li>';
+				echo '<li><a href="/static/logout">ВЫЙТИ</a></li>';
 			}
 			?>
-			<li><a href="#">WISHLIST</a></li>
-			<li><a href="#">USD</a></li>
-			<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 		</ul>
 	</div>
 </header>
@@ -37,12 +53,10 @@
 	<div class="flex_black_stripe">
 		<div>
 			<ul>
-				<li><a href="#">Specials</a></li>
-				<li><a href="#">Categories</a></li>
-				<li><a href="#">Quick Links</a></li>
-				<li><a href="?page=reviews">Reviews</a></li>
-				<li><a href="?page=file_system">File system</a></li>
-				<li><a href="?page=game">Game</a></li>
+				<li><a href="/">Главная</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Политика конфиденциальности</a></li>
 			</ul>
 		</div>
 		<div class="container_search">

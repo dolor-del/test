@@ -48,7 +48,7 @@ header {
 	line-height: 75px;
 	margin: 0;
 	white-space: nowrap;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	text-align: right;
 }
 
@@ -294,14 +294,6 @@ header {
 .flex-in-flex-1-center a > div .text_cen{
 	font-size: 20px;
 	font-weight: bold;
-}
-
-.case00_center {
-	background-image: url("/img/case1_center.jpg");
-}
-
-.case01_center {
-	background-image: url("/img/case2_center.jpg");
 }
 
 .content {
